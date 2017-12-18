@@ -142,6 +142,7 @@ model.compile(loss='categorical_crossentropy',
               optimizer='rmsprop',
               metrics=['acc'])
 
+# note that the accuracy is expected to be ~71% rather than the 95% indicated in the blog post. 
 model.fit(x_train, y_train,
           batch_size=128,
           epochs=10,
